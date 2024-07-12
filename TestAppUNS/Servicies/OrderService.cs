@@ -55,7 +55,6 @@ namespace TestAppUNS.Servicies
                 .Take(pageSize)
                 .Select(order => _mapper.Map<OrderModel>(order))
                 .ToList());
-
         }
 
         public OrderModel? GetOrder(int id)
